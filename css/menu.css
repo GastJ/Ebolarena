@@ -1,0 +1,69 @@
+@font-face {
+	font-family: "How To Disappear";
+	src: url('../assets/fonts/howtodisappear.ttf');
+}
+@font-face {
+	font-family: "Bloody";
+	src: url('../assets/fonts/BLOODY.TTF');
+}
+@font-face {
+	font-family: "BloodBlocks";
+	src: url('../assets/fonts/BloodBlocks.ttf');
+}
+/* *{
+	font-family: "How To Disappear",Arial, sans-serif;
+} */
+
+body{
+
+	font-family: "How To Disappear",Arial, sans-serif;
+	padding: 5px;
+	background-image: url(../assets/images/menu.png);
+	background-size: cover;
+	text-align: center;
+	background-color: #CC1A1E;
+	font-style: normal;
+	font-weight: normal;
+	overflow: hidden;
+}
+
+.btn1{
+	border: 4px solid white;
+	border-radius: 5px;
+	color: white; 
+	text-decoration: none; 
+	padding: 15px 40px;
+	background-color: #000;
+	font-size: 50px;
+	box-shadow: 25px 25px 80px black;
+}
+.btn1:hover{
+	border: 4px solid #000;
+	color: black;
+	background-color: white;
+}
+a{
+	margin: 10px;
+}
+
+.titlegame{
+	font-size: 155px;
+	color: white;
+	padding: 0.68em 0px 0em 0px;
+	text-shadow: 4px 4px #000;
+	font-family: "How To Disappear",Arial, sans-serif;
+}
+.retour_page {
+	
+	width: 200px;
+	float: right;
+
+}
+.commandes {
+	width: 65%;
+	margin-left: 200px;
+}
+.credits {
+	width: 65%;
+	margin-left: 200px;
+}

@@ -1,0 +1,9 @@
+@font-face {
+	font-family: "Bloody";
+	src: url('../assets/fonts/BLOODY.TTF');
+}
+/* @font-face {
+	font-family: "BloodBlocks";
+	src: url('../font/BloodBlocks.ttf');
+} */
+*{overflow: hidden;}
