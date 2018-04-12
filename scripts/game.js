@@ -256,7 +256,7 @@ function create(){
     };
     video = game.add.video('ebola');
     video.play();
-    sprite = video.addToWorld(game.world.centerX, game.world.centerY, 0.5, 0.5, 1, 1);
+    sprite = video.addToWorld(game.world.centerX, game.world.centerY, 0.5, 0.5,1.5,1.5);
     setTimeout(function(){
         sprite.destroy();
     },2600);
