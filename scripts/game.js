@@ -55,6 +55,17 @@ function preload(){
     game.load.video('ebola', 'assets/images/ebola.mp4');
 
 }; 
+function goFullScreen(){
+    // setting a background color
+    game.stage.backgroundColor = "#555555";
+    // using RESIZE scale mode
+    game.world._definedSize = true;
+    game.stage.disableVisibilityChange = true;
+    game.scale.scaleMode = Phaser.ScaleManager.SHOW_ALL;
+    game.scale.pageAlignHorizontally = true;
+    game.scale.pageAlignVertically = true; 
+    /*game.scale.setScreenSize(true);*/ 
+}
 function create(){
 	game.physics.startSystem(Phaser.Physics.ARCADE); 
     game.renderer.clearBeforeRender = false;
@@ -62,8 +73,8 @@ function create(){
     game.world.setBounds(0, 0, w, h);
     // fond
     bg = game.add.tileSprite(0, 0, 1920, 1080, 'gameBg');
-    bg.scale.setTo(0.8, 0.8); // comment this line if the background isn't well sized
-
+    //bg.scale.setTo(0.8, 0.8); // comment this line if the background isn't well sized
+    goFullScreen();
     // Joueur
     player = createplayer();
     /*cell = createCell();*/
@@ -245,7 +256,7 @@ function create(){
     };
     video = game.add.video('ebola');
     video.play();
-    sprite = video.addToWorld(game.world.centerX, game.world.centerY, 0.5, 0.5, 1.2, 1.2);
+    sprite = video.addToWorld(game.world.centerX, game.world.centerY, 0.5, 0.5, 1, 1);
     setTimeout(function(){
         sprite.destroy();
     },2600);
