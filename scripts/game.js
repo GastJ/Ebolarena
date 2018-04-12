@@ -213,20 +213,6 @@ function create(){
         choiseLabel.anchor.setTo(0.5, 0.5);
     });
 
-    // Bouton Retry
-    gameRetry = game.add.sprite(-1600, game.camera.y+400, "retry");
-    gameRetry.anchor.set(0.5,0.5);
-    gameRetry.visible = false;
-    /*gameRetry.animations.add('moveRetry');
-    gameRetry.animations.play('moveRetry', 10, true);*/
-
-    // Bouton Menu
-    gameMenu = game.add.sprite(-1600, game.camera.y+400, 'menu');
-    gameMenu.anchor.set(0.5,0.5);
-    gameMenu.visible = false;
-    /*gameMenu.animations.add('moveMenu');
-    gameMenu.animations.play('moveMenu', 10, true);*/
-
     // Bouton pour quitter pause
     game.input.onDown.add(unpause);
 
@@ -666,30 +652,6 @@ function render()
     });*/
     //game.debug.body(player);
 }
-/*function restart () 
-{
-    // Resets the life count
-    lives.callAll('revive');
-    // And brings the enemies back from the dead :)
-    enemies.callAll('kill');
-
-    // Ressuscite le joueur
-    player.revive();
-
-    // Remet le game background initial
-    bg.loadTexture('gameBg');
-
-    // Cache le game over et les boutons retry et menu
-    gameOver.visible = false;
-    // Restart le score
-    game.world.remove(scoreText);
-    game.world.remove(gamehighScoreText);
-    score = 0;
-    scoreString = 'Score : ';
-    scoreText = game.add.text(10, 50, scoreString + score, { font: '34px Bloody', fill: '#ffffff' });
-    gamehighScoreString = 'Highscore : ';
-    gamehighScoreText = game.add.text(10, 10, gamehighScoreString + localStorage.getItem("highscore"), { font: '34px Bloody', fill: '#ffffff' });
-}*/
 function callMenu(){
     document.location.href="menu.html";
 }
