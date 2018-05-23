@@ -279,7 +279,7 @@ function fireBullet () {
                 else
                     bullet.rotation = Math.degrees(Math.sin(Math.radians(angleTir+180)));
                     bullet.rotation = player.rotation;
-                    game.physics.arcade.velocityFromRotation(bullet.rotation, 400, bullet.body.velocity);
+                    game.physics.arcade.velocityFromRotation(bullet.rotation, 600, bullet.body.velocity);
                     bulletTime = game.time.now + 200; // 70 (ancienne valeur)
             }
         }
